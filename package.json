@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "* Name: Sadie * GitHub: dogHub",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Allison K Smith",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksmith5239/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aksmith5239/readme-generator/issues"
+  },
+  "homepage": "https://github.com/aksmith5239/readme-generator#readme"
 }

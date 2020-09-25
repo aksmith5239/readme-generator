@@ -1,16 +1,18 @@
 const generateMarkdown = (name, github) => {
     return `
 # Project Title
+## Badges
+* This license is covered under the _____ license
 ## Description
 ## Table of Contents
 ## Installation
 ## Usage
 ## Credits
-## License
-## Badges
 ## Contributing
 ## Tests
 ## Questions
+## License
+
 * Name: ${name}
 * GitHub: ${github}
     `;
