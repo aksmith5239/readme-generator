@@ -1,3 +1,5 @@
+const fs = require('fs');
+const generateMarkdown = require('./src/page-template.js');
 const inquirer = require('inquirer');
 
 const promptUser = () => {
@@ -104,9 +106,22 @@ const promptProject = () => {
             }
         }, 
         {
+            type: 'confirm',
+            name: 'contribution',
+            message: 'Are you open to contributions?:',
+            default: false
+        }, 
+        {
             type: 'input',
             name: 'contributionGuidelines',
-            message: 'Enter the contribution guidelines:'
+            message: 'Enter the contribution guidelines:',
+            when: ({contribution}) => {
+                if (contribution) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }, 
         {
             type: 'input',
@@ -124,13 +139,9 @@ const promptProject = () => {
     ]);
 };
 
-promptUser().then(answers => console.log(answers))
-.then(promptProject).then(projectAnswers => console.log(projectAnswers));
-// const fs = require('fs');
-// const generateMarkdown = require('./src/page-template.js');
-// const readmeDataArgs = process.argv.slice(2);
-// const [name, github] = readmeDataArgs;
-
+promptUser()
+.then(promptProject).then(markdownData => {
+    const pageMarkdown = generateMarkdown(markdownData);
 
 // // function to write README file
 // fs.writeFile('README.md', generateMarkdown(name, github), err => {
@@ -138,7 +149,10 @@ promptUser().then(answers => console.log(answers))
 
 //     console.log('Readme Complete! ceckout README.md for output!');
 // });
+});
 
+// const markdownDataArgs = process.argv.slice(2);
+// const [name, github] = markdownDataArgs;
 
 
 // // array of questions for user

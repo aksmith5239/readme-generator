@@ -1,21 +1,30 @@
-const generateMarkdown = (name, github) => {
+module.exports = templateData => {
+    console.log(templateData);
+
     return `
 # Project Title
-## Badges
-* This license is covered under the _____ license
+* badges
 ## Description
 ## Table of Contents
+*link to Installation
+*link to Usage
+*link to Contributing
+*link to Tests
+* link to License
+* link to Questions
+
 ## Installation
 ## Usage
-## Credits
 ## Contributing
 ## Tests
-## Questions
 ## License
+* This license is covered under the _____ license
 
-* Name: ${name}
-* GitHub: ${github}
+## Questions
+* For more information contact me at:
+* Name: ${templateData.name}
+* GitHub: ${templateData.github}
+
     `;
 };
 
-module.exports = generateMarkdown;
