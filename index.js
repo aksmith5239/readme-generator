@@ -1,9 +1,9 @@
 const fs = require('fs');
 const generatePage = require('./src/page-template.js');
 const inquirer = require('inquirer');
-
-        
+       
 const promptUser = () => {
+   
     return inquirer.prompt([
         {
             type: 'input',
@@ -97,22 +97,10 @@ const promptUser = () => {
                     }
                 }, 
                 {
-                    type: 'confirm',
-                    name: 'contribution',
-                    message: 'Are you open to contributions?:',
-                    default: false
-                }, 
-                {
                     type: 'input',
                     name: 'contributionGuidelines',
-                message: 'Enter the contribution guidelines:',
-                when: ({contribution}) => {
-                    if (contribution) {
-                        return true;
-                        } else {
-                        return false;
-                    }
-                }
+                    message: 'Enter the contribution guidelines:',
+               
             }, 
                 {
                     type: 'input',
@@ -122,21 +110,23 @@ const promptUser = () => {
                 {
                     type: 'checkbox',
                     name: 'licenses',
-                    message: 'Choose your license type:',
-                    choices: ['Apache', 'BSD', 'GNU', 'MIT']
-                
-                    // use map or filter to add the license badge
-        } 
+                    message: 'Choose your license type: (Choose One)',
+                    choices: ['Apache', 'BSD', 'GNU', 'MIT'], 
+                    validate: function (answer) {
+                        if(answer.length > 1) {
+                            return 'Please choose only one option.';
+                        } 
+                        return true;
+                    },
+        } ,
     ]);
 };
 
 promptUser()
-// .then(promptProject)
 .then(markdownData => {
     const pageMarkdown = generatePage(markdownData);
-
 // function to write README file
-fs.writeFile('README.md', pageMarkdown, err => {
+fs.writeFile('./dist/README.md', pageMarkdown, err => {
     if (err) throw err;
 
     console.log('Readme Complete! ceckout README.md for output!');
@@ -144,12 +134,3 @@ fs.writeFile('README.md', pageMarkdown, err => {
 });
 
 
-
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();

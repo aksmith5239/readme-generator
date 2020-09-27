@@ -1,10 +1,11 @@
 
-# Roadrunner Capitol Reports
+# Readme Generator
 
-* badges
+![github logo](https://img.shields.io/badge/license-GNU-orange.svg)
+
 
 ## Description
-* A legislative tracking and reporting service for lobbyists
+* This project creates a README.md file for a user to create a readme file from the command line. When the user runs the code the user is prompted to answer questions about their project. When all of the questions are answered the readme file is created. 
 ***
 ## Table of Contents
 [Installation](#installation)<br>
@@ -15,23 +16,25 @@
 [Questions](#questions)<br>
 ***
 ## Installation
-register with roadrunnercapitol.com
+To install the project, clone the repo and from the command line enter node index.js
 
 ## Usage
-Usage is subscription based
+This readme file may be used to create a readme for any project the user wishes to create a readme file for.
 
 ## Contributing
-undefined
+Contributions may be made to the GitHub repository.
 
 ## Tests
-There are no istructions at this time
+Testing may be performed by cloning the GitHub repository.
 
 ## License
-This license is covered under the Apache license
+### This license is covered under the GNU license
+* <p>The GNU General Public License (GNU GPL or simply GPL) is a series of widely-used free software licenses that guarantee end users the freedom to run, study, share, and modify the software.</p>
 ***
 ## Questions
 For more information contact me at:<br>
-* Name: aksmith
-* GitHub: http://www.roadrunnercapitol.com/
+* Name: aksmith5239
+
+* GitHub: https://git@github.com:aksmith5239/readme-generator.git
 * Email Address: aklobby@gmail.com
     
