@@ -20,10 +20,11 @@ To install the project, clone the repo and from the command line enter node inde
 
 ## Usage
 This readme file may be used to create a readme for any project the user wishes to create a readme file for.
+* Demo Link: https://drive.google.com/file/d/12E1ydie2tU8nSuzp_RPN6O5-yJnASasV/view
 
 ## Contributing
 Contributions may be made to the GitHub repository.
-* Demo Link: https://drive.google.com/file/d/12E1ydie2tU8nSuzp_RPN6O5-yJnASasV/view
+
 ## Tests
 Testing may be performed by cloning the GitHub repository.
 

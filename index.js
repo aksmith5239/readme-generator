@@ -129,9 +129,9 @@ promptUser()
 fs.writeFile('./dist/README.md', pageMarkdown, err => {
     if (err) throw err;
 
-    console.log('Readme Complete! ceckout README.md for output!');
+    console.log('Readme Complete! ceckout dist/README.md for output!');
     });
-
+  
 });
 
 

@@ -1,5 +1,5 @@
 module.exports = templateData => {
-// console.log(templateData); 
+ 
 const {name, repoLink, email, title, description, installation, usage, contribution, test, ...license} = templateData;
 
 if (license.licenses == 'Apache') {
@@ -19,7 +19,7 @@ if (license.licenses == 'Apache') {
 
 
 ## Description
-* ${templateData.description}
+${templateData.description}
 ***
 ## Table of Contents
 [Installation](#installation)<br>
