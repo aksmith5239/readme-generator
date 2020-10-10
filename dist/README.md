@@ -1,11 +1,11 @@
 
-# Readme Generator
+# Notable
 
-![github logo](https://img.shields.io/badge/license-GNU-orange.svg)
+![github logo](https://img.shields.io/badge/license--orange.svg)
 
 
 ## Description
-This project creates a README.md file for a user to create a readme file from the command line. When the user runs the code the user is prompted to answer questions about their project. When all of the questions are answered the readme file is created.
+Notable creates a note taking app that allows a user to enter a note title and note text and to save the note.
 ***
 ## Table of Contents
 [Installation](#installation)<br>
@@ -16,24 +16,24 @@ This project creates a README.md file for a user to create a readme file from th
 [Questions](#questions)<br>
 ***
 ## Installation
-To install the project, clone the repo and from the command line enter node index.js
+The application is accessed from https://notable-notes-2020.herokuapp.com/ . Press the start button to enter notes.
 
 ## Usage
-This readme file may be used to create a readme for any project the user wishes to create a readme file for.
+Access the application from the heroku url https://notable-notes-2020.herokuapp.com/ and then press the start button. To enter a note place the cursor on the Title and enter your title. Place the cursor in the text field and enter the note text. To save the note press the save icon that appears in the top right corner. To add a new note click the pencil icon in the top right corner of the screen. 
 
 ## Contributing
-Contributions may be made to the GitHub repository.
+
 
 ## Tests
-Testing may be performed by cloning the GitHub repository.
+
 
 ## License
-### This license is covered under the GNU license(s):
-* The GNU General Public License (GNU GPL or simply GPL) is a series of widely-used free software licenses that guarantee end users the freedom to run, study, share, and modify the software.
+### This license is covered under the  license(s):
+* 
 ***
 ## Questions
 For more information contact me at:<br>
 * Name: aksmith5239
-* GitHub: https://github.com/aksmith5239/readme-generator
-* Email Address: akslobby@gmail.com
+* GitHub: git@github.com:aksmith5239/notable.git
+* Email Address: aklobby@gmail.com
     
